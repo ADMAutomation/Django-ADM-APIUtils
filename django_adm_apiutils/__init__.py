@@ -1,7 +1,7 @@
 import modelsAbstracts, tests
 
 __title__ = 'Django ADM API Utils'
-__version__ = '0.1.3'
+__version__ = '0.1.4'
 __author__ = 'Alfredo Di Maria'
 __license__ = 'GPL 3'
 __copyright__ = 'Copyright 2017 ADM Automation'
