@@ -1,5 +1,8 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 import os
 from setuptools import find_packages, setup
+import adm_apiutils
 
 with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
     README = readme.read()
@@ -8,22 +11,26 @@ with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
-    name='django_adm_apiutils',
-    version='0.1.4',
-    packages=find_packages(),
+    name='adm_apiutils',
+    version=adm_apiutils.__version__,
+    #packages=find_packages(),
+    packages=['adm_apiutils'], 
     include_package_data=True,
-    license='GPL 3',  # example license
+    install_requires=[
+        'django'
+    ], 
+    license=adm_apiutils.__license__,  # example license
     description='Some django abstract model',
     long_description=README,
-    url='https://github.com/ADMAutomation/Django-ADM-APIUtils',
-    author='Alfredo Di Maria',
-    author_email='linuxloverstaff@gmail.com',
+    url=adm_apiutils.__url__,
+    author=adm_apiutils.__author__,
+    author_email=adm_apiutils.__author_email__,
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
         'Framework :: Django :: 1.10',  # keep updated "X.Y" as appropriate
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: GPL 3',  # example license
+        'License :: OSI Approved :: ' + adm_apiutils.__license__,  # example license
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         # Replace these appropriately if you are stuck on Python 2.
