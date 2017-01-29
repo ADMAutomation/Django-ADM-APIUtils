@@ -15,7 +15,7 @@ setup(
     license='GPL 3',  # example license
     description='Some django abstract model',
     long_description=README,
-    url='https://www.admautomation.com/',
+    url='https://github.com/ADMAutomation/Django-ADM-APIUtils',
     author='Alfredo Di Maria',
     author_email='linuxloverstaff@gmail.com',
     classifiers=[

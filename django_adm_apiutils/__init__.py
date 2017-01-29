@@ -1,5 +1,3 @@
-import modelsAbstracts, tests
-
 __title__ = 'Django ADM API Utils'
 __version__ = '0.1.4'
 __author__ = 'Alfredo Di Maria'
