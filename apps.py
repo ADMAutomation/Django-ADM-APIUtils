@@ -4,4 +4,4 @@ from django.apps import AppConfig
 
 
 class AdmapiutilsConfig(AppConfig):
-    name = 'ADMAPIUtils'
+    name = 'django_ADM_APIUtils'
